@@ -6,7 +6,7 @@ user=' -l jack'
 alias ll=$ssh$LINODE$user
 
 user=' -l jdubie'
-myth='myth.stanford.edu'
+myth='myth13.stanford.edu'
 xenon='xenon.stanford.edu'
 corn='corn.stanford.edu'
 
