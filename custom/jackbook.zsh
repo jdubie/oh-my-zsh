@@ -1,4 +1,4 @@
-# for use on all CSADVISOR machines
+# for use on JACKBOOK machines
 if [ -z "$JACKBOOK" ]; then
   return
 fi
