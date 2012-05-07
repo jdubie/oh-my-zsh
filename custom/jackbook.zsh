@@ -1,3 +1,8 @@
+# for use on all CSADVISOR machines
+if [ -z "$JACKBOOK" ]; then
+  return
+fi
+
 ###########################################################
 ## Environment Variables and Aliases Specific
 ## to Jackbook
