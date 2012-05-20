@@ -4,4 +4,4 @@ if [ -z "$NVM" ]; then
 fi
 
 # source nvm file
-. ~/nvm/nvm.sh
+. ~/.nvm/nvm.sh
