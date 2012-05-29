@@ -1,9 +1,11 @@
 #!/usr/bin/expect
 
 # Handle input variables
+#set host [lindex $argv 0]
 set host [lindex $argv 0]
-set user "jdubie"
-set pwd  $env(PWD_STANFORD)
+append host ".stanford.edu"
+set user      "jdubie"
+set pwd       $env(PWD_STANFORD)
 
 # ssh
 eval spawn ssh -oStrictHostKeyChecking=no -oCheckHostIP=no $user@$host
