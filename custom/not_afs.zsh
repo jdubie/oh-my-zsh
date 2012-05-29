@@ -3,4 +3,4 @@ if [ "$AFS" ]; then
   return
 fi
 
-echo 'No  afs'
+PATH=$PATH:~/.oh-my-zsh/scripts
