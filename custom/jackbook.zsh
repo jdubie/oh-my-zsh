@@ -24,7 +24,7 @@ export NODE_PATH="/usr/local/bin"
 export ANDROID_HOME=/Users/jdubie/android-sdk-mac_x86
 
 ## application aliases
-alias s='open -a "/Applications/Sublime Text 2.app"'
+alias slime='open -a "/Applications/Sublime Text 2.app"'
 alias a='coffee app.coffee'
 alias aa='coffee bin/app.coffee'
 alias inpath='PATH=$PATH:$PWD'
