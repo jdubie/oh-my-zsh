@@ -35,7 +35,6 @@ then
 
       # Don't ask for updates
       line=Y
-      
       if [ "$line" = Y ] || [ "$line" = y ]
       then
         _upgrade_zsh
