@@ -10,4 +10,4 @@ alias tree='$~ZSH_CUSTOM/scripts/tree.sh'
 PATH=$PATH:./node_modules/.bin
 
 # put executables in your working directory in your path
-PATH:$PATH:.
+#PATH:$PATH:. # TODO get this working
