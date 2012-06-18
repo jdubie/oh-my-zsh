@@ -51,5 +51,5 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 alias r='source ~/.profile'
 
 # orchestra
-alias or='cd /Users/jdubie/Dropbox/Developer/orchestra'
+alias or='cd /Users/jdubie/Documents/orchestra2'
 
