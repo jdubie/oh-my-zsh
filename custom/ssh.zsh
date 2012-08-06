@@ -1,5 +1,5 @@
 # ssh aliases
-ssh='ssh '
+ssh='ssh.exp '
 user=' -l jack'
 
 # linode
@@ -10,6 +10,6 @@ myth='myth13.stanford.edu'
 xenon='xenon.stanford.edu'
 corn='corn.stanford.edu'
 
-alias  m=$ssh$myth$user
-alias  x=$ssh$xenon$user
-alias  c=$ssh$corn$user
+alias  myth=$ssh$myth$user
+alias  xenon=$ssh$xenon$user
+alias  corn=$ssh$corn$user

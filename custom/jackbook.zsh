@@ -16,6 +16,7 @@ export PATH=/usr/local/lib/bin:$PATH
 export PATH=/usr/local/lib/redis/src:$PATH
 export PATH=$PATH:$HOME/android-sdk-mac_x86/tools:$HOME/android-sdk-mac_x86/platform-tools
 export PATH=$PATH:/Users/jdubie/Dropbox/Developer/course_advisor/bin
+export PATH=$PATH:/Users/jdubie/.bin
 # rvm modifies path
 source /Users/jdubie/.rvm/scripts/rvm
 
@@ -31,7 +32,7 @@ alias inpath='PATH=$PATH:$PWD'
 
 ## cd aliases
 alias p='cd /Users/jdubie/Dropbox/Developer/course_advisor/petitions'
-alias j='cd /Users/jdubie/Dropbox/Developer/projects/nodejs/jennings'
+#alias j='cd /Users/jdubie/Dropbox/Developer/projects/nodejs/jennings'
 alias ss='cd /Users/jdubie/Dropbox/Developer/projects/nodejs/somacentral.com'
 alias e='cd /Users/jdubie/Dropbox/Developer/projects/nodejs/_teasers/project_euler'
 alias acad='cd /Users/jdubie/Dropbox/Developer/academic'
@@ -51,5 +52,8 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 alias r='source ~/.profile'
 
 # orchestra
-alias or='cd /Users/jdubie/Documents/orchestra2'
+export ORCHESTRA='/Users/jdubie/Documents/orchestra2'
+alias or='cd $ORCHESTRA'
 
+# add scripts
+export PATH=$PATH:$ZSH_CUSTOM/scripts
