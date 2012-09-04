@@ -4,7 +4,6 @@ export EDITOR=vim
 alias inpath='PATH=$PWD:$PATH'
 
 PATH=$PATH:~/.oh-my-zsh/scripts
-alias tree='$~ZSH_CUSTOM/scripts/tree.sh'
 
 # always keep node_modules/.bin in your path
 PATH=$PATH:./node_modules/.bin
@@ -18,5 +17,10 @@ alias kk='$EDITOR kanso.json'
 alias pp='$EDITOR package.json'
 alias mm='$EDITOR Makefile'
 
-alias k='kanso push'
 alias seed='kanso wipe && kanso seed && sleep 1 && clear'
+
+# clears terminal
+alias c='clear'
+
+# runs tests
+alias k='make test'

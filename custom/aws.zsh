@@ -4,7 +4,7 @@ if [ -z "$AWS" ]; then
 fi
 
 # for orchestra/aws-monitor
-export MONITOR_HOME=~/Documents/orchestra2
+export MONITOR_HOME=~/Documents/orchestra2/aws-monitor
 
 export AWS_CLOUDWATCH_HOME=~/Documents/orchestra2/cloud-watch-tool
 export PATH=$PATH:$AWS_CLOUDWATCH_HOME/bin
