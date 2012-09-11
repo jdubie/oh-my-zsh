@@ -3,7 +3,7 @@ export EDITOR=vim
 # puts current directory in your path
 alias inpath='PATH=$PWD:$PATH'
 
-PATH=$PATH:~/.oh-my-zsh/scripts
+PATH=$PATH:~ZSH_CUSTOM/scripts
 
 # always keep node_modules/.bin in your path
 PATH=$PATH:./node_modules/.bin
@@ -28,3 +28,9 @@ alias k='make test'
 
 # edit enviroment variables
 alias zz='vim ~/.zshenv && source ~/.zshenv'
+
+# search everything but node_modules
+alias s='~ZSH_CUSTOM/scripts/repo_search.zsh'
+
+# make executable
+alias x='chmod +x'
