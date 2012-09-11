@@ -6,4 +6,5 @@ grep -rn \
   --exclude-dir=public \
   --exclude-dir=bootstrap \
   --exclude-dir=vendor \
+  --exclude=\*.{jpg,png,jpeg} \
   $1 .
