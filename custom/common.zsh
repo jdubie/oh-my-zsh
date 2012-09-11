@@ -29,8 +29,12 @@ alias k='make test'
 # edit enviroment variables
 alias zz='vim ~/.zshenv && source ~/.zshenv'
 
+# refresh .oh-my-zsh
+alias z='source ~/.zshrc'
+
 # search everything but node_modules
 alias s='~ZSH_CUSTOM/scripts/repo_search.zsh'
 
 # make executable
 alias x='chmod +x'
+
