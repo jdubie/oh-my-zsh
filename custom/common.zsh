@@ -18,9 +18,13 @@ alias pp='$EDITOR package.json'
 alias mm='$EDITOR Makefile'
 
 alias seed='kanso wipe && kanso seed && sleep 1 && clear'
+alias wipe='kanso wipe && kanso push && sleep 1 && clear'
 
 # clears terminal
 alias c='clear'
 
 # runs tests
 alias k='make test'
+
+# edit enviroment variables
+alias zz='vim ~/.zshenv && source ~/.zshenv'
