@@ -38,3 +38,5 @@ alias s='~ZSH_CUSTOM/scripts/repo_search.zsh'
 # make executable
 alias x='chmod +x'
 
+# alias make
+alias m='make'
