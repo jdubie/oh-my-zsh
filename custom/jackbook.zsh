@@ -57,3 +57,7 @@ alias or='cd $ORCHESTRA'
 
 # add scripts
 export PATH=$PATH:$ZSH_CUSTOM/scripts
+
+# add advizor to path and node_path
+export NODE_PATH=$NODE_PATH:~/Dropbox/Developer/course_advisor/advizor
+export PATH=$PATH:~/Dropbox/Developer/course_advisor/advizor/bin
