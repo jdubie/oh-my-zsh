@@ -35,6 +35,9 @@ alias z='source ~/.zshrc'
 # search everything but node_modules
 alias s='~ZSH_CUSTOM/scripts/repo_search.zsh'
 
+# ubuntu services
+alias ss='sudo service'
+
 # make executable
 alias x='chmod +x'
 
