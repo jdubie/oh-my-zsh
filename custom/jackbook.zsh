@@ -61,3 +61,6 @@ export PATH=$PATH:$ZSH_CUSTOM/scripts
 # add advizor to path and node_path
 export NODE_PATH=$NODE_PATH:~/Dropbox/Developer/course_advisor/advizor
 export PATH=$PATH:~/Dropbox/Developer/course_advisor/advizor/bin
+
+# list recent downloads
+alias rr='ls -t -r ~/Downloads | tail'
