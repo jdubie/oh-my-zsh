@@ -43,3 +43,6 @@ alias x='chmod +x'
 
 # alias make
 alias m='make'
+
+# screen attach
+alias sa='screen -R'
