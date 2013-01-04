@@ -46,3 +46,10 @@ alias m='make'
 
 # screen attach
 alias sa='screen -R'
+
+# make test
+alias mt='make test'
+
+# git flow
+alias gffs='git flow feature start'
+alias gfff='git flow feature finish'
