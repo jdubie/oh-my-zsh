@@ -40,3 +40,7 @@ alias x='chmod +x'
 
 # alias make
 alias m='make'
+
+# cabal binaries
+PATH=$HOME/.cabal/bin:$PATH
+
