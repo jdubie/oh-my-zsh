@@ -35,6 +35,9 @@ alias z='source ~/.zshrc'
 # search everything but node_modules
 alias s='~ZSH_CUSTOM/scripts/repo_search.zsh'
 
+# ubuntu services
+alias ss='sudo service'
+
 # make executable
 alias x='chmod +x'
 
@@ -44,3 +47,12 @@ alias m='make'
 # cabal binaries
 PATH=$HOME/.cabal/bin:$PATH
 
+# screen attach
+alias sa='screen -R'
+
+# make test
+alias mt='make test'
+
+# git flow
+alias gffs='git flow feature start'
+alias gfff='git flow feature finish'
