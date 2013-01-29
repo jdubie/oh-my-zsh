@@ -57,3 +57,16 @@ alias utar='tar xvzf'
 alias mtar=''
 
 # extract bzipped tar ball
+
+# cabal binaries
+PATH=$HOME/.cabal/bin:$PATH
+
+# screen attach
+alias sa='screen -R'
+
+# make test
+alias mt='make test'
+
+# git flow
+alias gffs='git flow feature start'
+alias gfff='git flow feature finish'
