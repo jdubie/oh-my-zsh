@@ -64,3 +64,6 @@ export PATH=$PATH:~/Dropbox/Developer/course_advisor/advizor/bin
 
 # list recent downloads
 alias rr='ls -t -r ~/Downloads | tail'
+
+# cd to blog
+alias b='cd ~/Dropbox/Developer/blog/jackdubie.com/articles'

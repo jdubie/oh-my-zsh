@@ -43,3 +43,17 @@ alias x='chmod +x'
 
 # alias make
 alias m='make'
+
+# size of file
+alias sz='du -sh'
+
+# edit this file
+alias cc='vim ~ZSH_CUSTOM/common.zsh'
+
+# extract tar ball
+alias utar='tar xvzf'
+
+# compress tar ball
+alias mtar=''
+
+# extract bzipped tar ball
