@@ -69,3 +69,6 @@ alias mt='make test'
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 gr() { git rebase -i HEAD~"$*"; }
+
+# checksum directory
+chk() { find $1 -exec md5sum {} + | awk '{print $1}' | sort | md5sum }
