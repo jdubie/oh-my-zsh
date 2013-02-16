@@ -54,9 +54,7 @@ alias cc='vim ~ZSH_CUSTOM/common.zsh'
 alias utar='tar xvzf'
 
 # compress tar ball
-alias mtar=''
-
-# extract bzipped tar ball
+mtar() { tar -cvzf "$1.tar.gz" "$1"; }
 
 # cabal binaries
 PATH=$HOME/.cabal/bin:$PATH
@@ -70,3 +68,4 @@ alias mt='make test'
 # git flow
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+gr() { git rebase -i HEAD~"$*"; }
