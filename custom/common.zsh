@@ -70,3 +70,6 @@ alias mt='make test'
 # git flow
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+
+# checksum directory
+chk() { find $1 -exec md5sum {} + | awk '{print $1}' | sort | md5sum }
