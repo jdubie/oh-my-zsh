@@ -25,6 +25,7 @@ alias c='clear'
 
 # runs tests
 alias k='make test'
+alias mc='make check'
 
 # edit enviroment variables
 alias zz='vim ~/.zshenv && source ~/.zshenv'
@@ -48,7 +49,7 @@ alias m='make'
 alias sz='du -sh'
 
 # edit this file
-alias cc='vim ~ZSH_CUSTOM/common.zsh'
+alias zc='vim ~ZSH_CUSTOM/common.zsh'
 
 # extract tar ball
 alias utar='tar xvzf'
@@ -59,16 +60,26 @@ mtar() { tar -cvzf "$1.tar.gz" "$1"; }
 # cabal binaries
 PATH=$HOME/.cabal/bin:$PATH
 
-# screen attach
-alias sa='screen -R'
+# tmux attach
+alias sa='tmux attach -t'
+
+# tmux create session
+alias sf='tmux new-session -s ${PWD##*/}'
 
 # make test
-alias mt='make test'
+alias mt='cake test'
 
 # git flow
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 gr() { git rebase -i HEAD~"$*"; }
+alias gi='vim .gitignore'
 
 # checksum directory
 chk() { find $1 -exec md5sum {} + | awk '{print $1}' | sort | md5sum }
+
+# create backup file
+bk() { cp "$1" "$1.bak"; }
+
+# show all my processes
+alias mp="ps aux | grep $USER"
