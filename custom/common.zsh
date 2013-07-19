@@ -83,3 +83,21 @@ bk() { cp "$1" "$1.bak"; }
 
 # show all my processes
 alias mp="ps aux | grep $USER"
+
+# filter long lines
+fl() {
+  local LENGTH=$1
+  if [[ -z $1 ]]; then
+    LENGTH=200
+  fi
+
+  awk "{ if (length(\$0) < $LENGTH) print }"
+}
+
+# paging ack
+function ackp {
+  ack $@ --pager='less -R'
+}
+
+# put ~/bin in path
+PATH=$PATH:~/bin
