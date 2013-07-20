@@ -1,2 +1,2 @@
 #!/bin/bash
-./deploy.zsh
+~/.oh-my-zsh/deploy.zsh
