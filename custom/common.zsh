@@ -101,3 +101,34 @@ function ackp {
 
 # put ~/bin in path
 PATH=$PATH:~/bin
+
+# reset rabbit
+alias resetrabbit='/usr/local/sbin/rabbitmqctl stop_app; /usr/local/sbin/rabbitmqctl reset; /usr/local/sbin/rabbitmqctl start_app;'
+
+# wipe mongo
+db_reset() {
+  echo 'db.dropDatabase()' | mongo montecore
+  echo 'db.dropDatabase()' | mongo cheddar
+  echo 'db.dropDatabase()' | mongo local_maestro
+}
+
+# color man pages
+man() {
+  env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+      man "$@"
+}
+
+# grep all running processes
+function p {
+  ps aux | grep $1
+}
+
+# cd to Mailbox folder
+alias mb='cd ~/Developer/mailbox'
