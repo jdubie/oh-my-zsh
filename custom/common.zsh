@@ -101,6 +101,7 @@ function ackp {
 
 # put ~/bin in path
 PATH=$PATH:~/bin
+PATH=$PATH:~/.bin
 
 # reset rabbit
 alias resetrabbit='/usr/local/sbin/rabbitmqctl stop_app; /usr/local/sbin/rabbitmqctl reset; /usr/local/sbin/rabbitmqctl start_app;'
