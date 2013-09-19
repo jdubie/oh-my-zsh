@@ -3,6 +3,8 @@ export EDITOR=vim
 # puts current directory in your path
 alias inpath='PATH=$PWD:$PATH'
 
+source ~/.bash_aliases
+
 PATH=$PATH:~ZSH_CUSTOM/scripts
 
 # always keep node_modules/.bin in your path
