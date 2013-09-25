@@ -3,7 +3,9 @@ export EDITOR=vim
 # puts current directory in your path
 alias inpath='PATH=$PWD:$PATH'
 
-source ~/.bash_aliases
+if [[ -a ~/.bash_aliases ]]; then
+  source ~/.bash_aliases
+fi
 
 PATH=$PATH:~ZSH_CUSTOM/scripts
 
