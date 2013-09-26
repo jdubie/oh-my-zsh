@@ -74,6 +74,7 @@ alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 gr() { git rebase -i HEAD~"$*"; }
 alias gi='vim .gitignore'
+alias gds='git diff --staged'
 
 # checksum directory
 chk() { find $1 -exec md5sum {} + | awk '{print $1}' | sort | md5sum }
