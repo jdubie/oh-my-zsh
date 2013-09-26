@@ -138,3 +138,7 @@ function p {
 
 # cd to Mailbox folder
 alias mb='cd ~/Developer/mailbox'
+
+# git aliases
+alias push='git push'
+alias pull='git pull'
