@@ -142,3 +142,8 @@ alias mb='cd ~/Developer/mailbox'
 # git aliases
 alias push='git push'
 alias pull='git pull'
+
+# simple python server
+function smpl {
+  python -m SimpleHTTPServer $1
+}
